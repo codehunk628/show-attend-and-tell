@@ -1,5 +1,5 @@
 import numpy as np
-import cPickle as pickle
+import pickle
 import hickle
 import time
 import os
@@ -28,7 +28,7 @@ def load_coco_data(data_path='./data', split='train'):
         else:
             print k, type(v), len(v)
     end_t = time.time()
-    print "Elapse time: %.2f" %(end_t - start_t)
+    print ("Elapse time: %.2f" %(end_t - start_t))
     return data
 
 def decode_captions(captions, idx_to_word):
